@@ -84,6 +84,28 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="noise" />
+      <div className="sticky top-0 z-40 border-b border-cyan/15 bg-black/80 px-3 py-3 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-[1536px] flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <a href="/" className="font-display text-2xl font-black uppercase tracking-tight text-white">
+            HEDGE <span className="text-usdc">USDC</span>
+          </a>
+          <div className="flex flex-wrap gap-2">
+            <Cta href={pumpUrl}>PumpFun</Cta>
+            <Cta href={jupiterUrl}>Jupiter</Cta>
+            <Cta href={dexUrl} variant="dark">DexScreener</Cta>
+            <Cta href={communityUrl} variant="dark">Community</Cta>
+          </div>
+        </div>
+      </div>
+
+      <div className="overflow-hidden border-b border-cyan/15 bg-usdc/10 py-2">
+        <div className="ticker-tape flex w-[200%] gap-8 whitespace-nowrap text-xs font-black uppercase tracking-[0.25em] text-cyan/90">
+          {Array.from({ length: 16 }).map((_, index) => (
+            <span key={index}>USDC pairs are the new meta - hedge volatility - trade $HEDGE</span>
+          ))}
+        </div>
+      </div>
+
       <div className="mx-auto max-w-[1536px] space-y-2 p-2">
         <div className="grid items-start gap-2 lg:grid-cols-[1.685fr_1fr]">
           <ImagePanel asset={assets.hero} priority>
@@ -110,7 +132,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               aria-label="Buy HEDGE on PumpFun"
-              className="absolute left-[17%] top-[30%] h-[10%] w-[66%] rounded-[10px] transition hover:bg-cyan/10"
+              className="absolute left-[17%] top-[71%] h-[10%] w-[66%] rounded-[10px] transition hover:bg-cyan/10"
             />
           </ImagePanel>
 
