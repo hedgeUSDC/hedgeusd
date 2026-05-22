@@ -15,10 +15,10 @@ const assets = {
   hero: { src: "/hedge-assets/hero_banner.png", width: 964, height: 432, alt: "HEDGE USDC hero banner" },
   trading: { src: "/hedge-assets/trading_room.png", width: 572, height: 432, alt: "HEDGE trading room" },
   works: { src: "/hedge-assets/how_it_works.png", width: 483, height: 332, alt: "How HEDGE USDC works" },
-  tokenomics: { src: "/hedge-assets/tokenomics.png", width: 481, height: 332, alt: "HEDGE tokenomics" },
+  tokenomics: { src: "/hedge-assets/tokenomics-v2.png", width: 1717, height: 916, alt: "HEDGE tokenomics" },
   gallery: { src: "/hedge-assets/meme_gallery.png", width: 572, height: 332, alt: "HEDGE meme gallery" },
   buy: { src: "/hedge-assets/how_to_buy.png", width: 483, height: 400, alt: "How to buy HEDGE" },
-  one: { src: "/hedge-assets/one_hedge.png", width: 481, height: 400, alt: "One HEDGE many possibilities" },
+  one: { src: "/hedge-assets/one-hedge-v2.png", width: 1672, height: 941, alt: "One HEDGE many possibilities" },
   join: { src: "/hedge-assets/join_movement.png", width: 572, height: 400, alt: "Join the HEDGE movement" }
 };
 
