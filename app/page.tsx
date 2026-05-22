@@ -84,6 +84,24 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
       <div className="noise" />
+      <div className="border-b border-white/10 bg-black px-3 py-2">
+        <div className="mx-auto max-w-[1536px] rounded-[6px] border border-dashed border-white/70 bg-[#05070c] p-1 shadow-[0_0_22px_rgba(255,255,255,0.22),0_0_34px_rgba(39,117,202,0.18)]">
+          <div className="flex flex-col gap-3 rounded-[4px] border border-white/25 px-3 py-3 font-mono text-xs font-black uppercase tracking-[0.12em] text-white/85 sm:flex-row sm:items-center sm:justify-between sm:text-sm">
+            <div className="flex min-w-0 items-center gap-3">
+              <span className="text-white/60">Contract:</span>
+              <span className="truncate text-white">{contract}</span>
+            </div>
+            <button
+              onClick={copyContract}
+              className="inline-flex items-center justify-center gap-2 rounded-[6px] border border-white/70 px-4 py-2 text-xs text-white transition hover:border-cyan hover:bg-cyan/10 hover:text-cyan"
+            >
+              <Copy size={17} />
+              Copy
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div className="sticky top-0 z-40 border-b border-cyan/15 bg-black/80 px-3 py-3 backdrop-blur-xl">
         <div className="mx-auto flex max-w-[1536px] flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <a href="/" className="font-display text-2xl font-black uppercase tracking-tight text-white">
