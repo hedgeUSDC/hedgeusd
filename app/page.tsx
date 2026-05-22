@@ -110,7 +110,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               aria-label="Buy HEDGE on PumpFun"
-              className="absolute bottom-[13%] left-[17%] h-[15%] w-[66%] rounded-[10px] transition hover:bg-cyan/10"
+              className="absolute left-[17%] top-[30%] h-[10%] w-[66%] rounded-[10px] transition hover:bg-cyan/10"
             />
           </ImagePanel>
 
