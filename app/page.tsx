@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Copy, ExternalLink } from "lucide-react";
+import { ArrowDown, Copy, ExternalLink } from "lucide-react";
 
 const contract = "2YCcaBPWtUo3z1ViFCHTaMKcC88sAFRbuJdQZmfbpump";
 const pumpUrl = `https://pump.fun/coin/${contract}`;
@@ -127,13 +127,14 @@ export default function Home() {
 
         <div className="grid items-start gap-2 lg:grid-cols-[0.844fr_0.84fr_1fr]">
           <ImagePanel asset={assets.buy}>
-            <a
-              href={pumpUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Buy HEDGE on PumpFun"
-              className="absolute left-[17%] top-[71%] h-[10%] w-[66%] rounded-[10px] transition hover:bg-cyan/10"
-            />
+            <div className="absolute left-[17%] top-[43%] flex items-center gap-2 rounded-full border border-cyan/35 bg-black/70 px-3 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-cyan shadow-glow-soft backdrop-blur sm:text-xs">
+              Click below
+              <ArrowDown size={16} />
+            </div>
+            <div className="absolute bottom-[8%] left-[7%] right-[7%] grid gap-2">
+              <Cta href={pumpUrl}>Buy on PumpFun</Cta>
+              <Cta href={jupiterUrl} variant="dark">Buy on Jupiter</Cta>
+            </div>
           </ImagePanel>
 
           <ImagePanel asset={assets.one} />
