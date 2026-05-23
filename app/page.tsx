@@ -19,7 +19,7 @@ const assets = {
   gallery: { src: "/hedge-assets/meme-gallery-v2.png", width: 1672, height: 941, alt: "HEDGE meme gallery" },
   buy: { src: "/hedge-assets/how-to-buy-v2.png", width: 1672, height: 941, alt: "How to buy HEDGE" },
   one: { src: "/hedge-assets/one-hedge-v2.png", width: 1672, height: 941, alt: "One HEDGE many possibilities" },
-  join: { src: "/hedge-assets/join_movement.png", width: 572, height: 400, alt: "Join the HEDGE movement" }
+  join: { src: "/hedge-assets/join-movement-v2.png", width: 1672, height: 941, alt: "Join the HEDGE movement" }
 };
 
 type Asset = (typeof assets)[keyof typeof assets];
@@ -260,15 +260,17 @@ export default function Home() {
         <AssetImage asset={assets.buy} />
       </Section>
 
-      <Section className="grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr]">
-        <AssetImage asset={assets.join} />
-        <div>
+      <Section>
+        <div className="mb-8 max-w-3xl">
           <Eyebrow>Community</Eyebrow>
           <h2 className="mt-4 font-display text-4xl font-black uppercase sm:text-5xl">Join the movement.</h2>
           <p className="mt-5 text-lg leading-8 text-steel">
             Follow the official account, join the X community, watch the chart, and keep the memes calm while the market does market things.
           </p>
-          <div className="mt-7 grid gap-3 sm:grid-cols-2">
+        </div>
+        <div className="relative">
+          <AssetImage asset={assets.join} />
+          <div className="mt-5 grid gap-3 sm:grid-cols-5">
             <Cta href={twitterUrl} variant="dark">X / Twitter</Cta>
             <Cta href={communityUrl} variant="dark">X Community</Cta>
             <Cta href={pumpUrl}>PumpFun</Cta>
