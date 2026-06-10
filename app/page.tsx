@@ -8,7 +8,7 @@ const contract = "2YCcaBPWtUo3z1ViFCHTaMKcC88sAFRbuJdQZmfbpump";
 const pumpUrl = `https://pump.fun/coin/${contract}`;
 const dexUrl = "https://dexscreener.com/solana/8g2dvgjntt8gck67jdcbtmfc32vhntu3jakwvuqzmiw9";
 const twitterUrl = "https://x.com/hedgeUSDC";
-const communityUrl = "https://x.com/i/communities/2039234377243148746";
+const communityUrl = "https://coincommunities.org/communities/2YCcaBPWtUo3z1ViFCHTaMKcC88sAFRbuJdQZmfbpump";
 const jupiterUrl = `https://jup.ag/tokens/${contract}`;
 
 const assets = {
